@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get_routes/navega%C3%A7%C3%A3o_comum/back/back_page1.dart.dart';
+import 'package:get_routes/navegacao_comum/off/off_page1.dart';
 
-class BackHomePage extends StatelessWidget {
-  const BackHomePage({Key? key}) : super(key: key);
+class OffHomePage extends StatelessWidget {
+  const OffHomePage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Back Home'),
+        title: const Text('Off Home Page'),
       ),
       body: Center(
         child: Column(
@@ -20,17 +20,17 @@ class BackHomePage extends StatelessWidget {
                   Navigator.of(context).push(
                     MaterialPageRoute(
                       builder: (context) {
-                        return const BackPage1Dart();
+                        return const OffPage1();
                       },
                     ),
                   );
                 },
-                child: const Text('Go to page com Flutter nativo')),
+                child: const Text('Go to page 1 com Flutter nativo')),
             TextButton(
                 onPressed: () {
-                  Get.to(const BackPage1Dart());
+                  Get.to(const OffPage1());
                 },
-                child: const Text('Go to page com GetX'))
+                child: const Text('Go to page 1 com GetX'))
           ],
         ),
       ),

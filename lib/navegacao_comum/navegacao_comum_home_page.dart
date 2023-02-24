@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get_routes/navega%C3%A7%C3%A3o_comum/back/back_home_page.dart';
-import 'package:get_routes/navega%C3%A7%C3%A3o_comum/to/to_home_page.dart';
+import 'package:get_routes/navegacao_comum/back/back_home_page.dart';
+import 'package:get_routes/navegacao_comum/off/off_home_page.dart';
+import 'package:get_routes/navegacao_comum/to/to_home_page.dart';
 
 class NavegacaoComumHomePage extends StatelessWidget {
   const NavegacaoComumHomePage({Key? key}) : super(key: key);
@@ -27,6 +28,12 @@ class NavegacaoComumHomePage extends StatelessWidget {
                 Get.to(const BackHomePage());
               },
               child: const Text('BACK (Pop no Flutter)'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Get.to(const OffHomePage());
+              },
+              child: const Text('OFF (****)'),
             )
           ],
         ),

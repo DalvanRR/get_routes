@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get_routes/navega%C3%A7%C3%A3o_comum/to/page1.dart';
+import 'package:get_routes/navegacao_comum/to/page1.dart';
 
 class ToHomePage extends StatelessWidget {
   const ToHomePage({Key? key}) : super(key: key);
