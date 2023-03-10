@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:get_routes/navegacao_comum/back/back_home_page.dart';
 import 'package:get_routes/navegacao_comum/off/off_home_page.dart';
 import 'package:get_routes/navegacao_comum/offAll/off_all_home_page.dart';
+import 'package:get_routes/navegacao_comum/send_params/send_params_home_page.dart';
 import 'package:get_routes/navegacao_comum/to/to_home_page.dart';
 
 class NavegacaoComumHomePage extends StatelessWidget {
@@ -52,6 +53,15 @@ class NavegacaoComumHomePage extends StatelessWidget {
                   Get.to(const OffAllHomePage());
                 },
                 child: const Text('OFF ALL (PopAndRemoveUntil no Flutter)'),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(5),
+              child: ElevatedButton(
+                onPressed: () {
+                  Get.to(const SendParamsHomePage());
+                },
+                child: const Text('Enviando Parametros'),
               ),
             )
           ],
